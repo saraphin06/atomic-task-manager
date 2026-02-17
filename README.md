@@ -70,7 +70,7 @@ task-manager/
 └── docker-compose.yml          # Full-stack local development setup
 ```
 
-This is a **monorepo** with clear separation between backend and frontend. The backend uses **layer-based packaging** (appropriate for a single entity). The frontend uses **feature-based modules** (grouping task-related code together). See [ADR-016](docs/DECISIONS.md) for rationale.
+This is a **monorepo** with clear separation between backend and frontend. The backend uses **layer-based packaging** (appropriate for a single entity). The frontend uses **feature-based modules** (grouping task-related code together).
 
 ## Backend
 
@@ -99,8 +99,6 @@ When the backend is running:
 - **Swagger UI**: http://localhost:8080/swagger-ui.html
 - **OpenAPI spec**: http://localhost:8080/api/docs
 
-See [docs/API.md](docs/API.md) for detailed endpoint documentation.
-
 ## Frontend
 
 ### Running
@@ -124,7 +122,6 @@ npm run test:e2e          # E2E tests (requires running backend)
 
 ## Testing Strategy
 
-See [docs/TESTING-STRATEGY.md](docs/TESTING-STRATEGY.md) for the full testing strategy.
 
 ```
         /  E2E    \       ← 4 tests  (Playwright)
